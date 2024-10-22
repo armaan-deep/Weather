@@ -1,16 +1,21 @@
-<<<<<<< HEAD
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- # [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 # Weather
 
-Web Application where you can track the weather by CITY Name
+## This Website is Platform Which provides you Weather Details 
 
-> > > > > > > f6ff9e4d5eaa756c6079d204854c786b74ec1b4c
+### Through Entering City Name you get Details about
+**_> Temperature (Minimum, Maximum, Current)_** <br>
+**_> Wind_** <br>
+**_> Humidity_** <br>
+**_> Feels Like and Overall Conclusion_** <br>
+
+### Used Technology :
+_> HTML 5_ <br>
+_> JavaScript XML_ <br>
+_> React(vite)_ <br>
+_> CSS_ <br>
+
+### About Used Application Program Interface
+  Link :https://openweathermap.org/api
+
+
+
