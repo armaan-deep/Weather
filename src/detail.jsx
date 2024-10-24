@@ -51,7 +51,7 @@ export default function data({ data }) {
               <p>Temperature : {data.temp}&deg;C</p>
               <p>Humidity: {data.humidity}</p>
               <p>Pressure : {data.pressure}</p>
-              <p>Mininum Temperature : {data.tempMax}&deg;C</p>
+              <p>Maximum Temperature : {data.tempMax}&deg;C</p>
               <p>Mininum Temperature : {data.tempMin}&deg;C</p>
               <p>Wind : {data.wind}</p>
               <p>

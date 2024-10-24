@@ -20,6 +20,7 @@ let Search = ({ SetData, setLoading }) => {
       );
 
       let result = await res.json();
+      console.log(result);
       let weatherInfo = {
         city: city,
         humidity: result.main.humidity,
@@ -27,7 +28,7 @@ let Search = ({ SetData, setLoading }) => {
         temp: result.main.temp,
         feelsLike: result.main.feels_like,
         tempMax: result.main.temp_max,
-        tempMin: result.main.temp_max,
+        tempMin: result.main.temp_min,
         wind: result.wind.speed,
         cond: result.weather[0].description,
         condition: true,
@@ -58,14 +59,15 @@ let Search = ({ SetData, setLoading }) => {
   return (
     <form onSubmit={handleform}>
       <div className="inp">
-      <TextField value={city} onChange={handleinp} label="Enter City" />
-      <Button className="sub_btn" type="submit">
-        Get Weather
-      </Button>
+        <TextField value={city} onChange={handleinp} label="Enter City" />
+        <Button className="sub_btn" type="submit">
+          Get Weather
+        </Button>
       </div>
       {Err && (
         <Collapse in={open}>
-          <Alert className="Alert"
+          <Alert
+            className="Alert"
             severity="error"
             action={
               <IconButton
