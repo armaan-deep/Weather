@@ -52,8 +52,7 @@ export default function data({ data }) {
             <p>Humidity: {data.humidity}</p>
             <p>Pressure : {data.pressure}</p>
             <p>Wind : {data.wind}</p>
-            <p>Coordinates : Longitude {data.coordinates.lon}, Latitude {data.coordinates.lat}</p>
-            <p>Country : {data.country}</p>
+            <p>Longitude : {data.coordinates.lon}, Latitude : {data.coordinates.lat}, Country : {data.country}</p>
             <p>Sunrise : {new Date(data.sunrise * 1000).toLocaleTimeString()}</p>
             <p>Sunset : {new Date(data.sunset * 1000).toLocaleTimeString()}</p>
             <p>Visibility : {data.visibility} meters</p>
