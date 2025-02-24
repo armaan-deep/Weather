@@ -53,8 +53,7 @@ export default function data({ data }) {
             <p>Pressure : {data.pressure}</p>
             <p>Wind : {data.wind}</p>
             <p>Longitude : {data.coordinates.lon}, Latitude : {data.coordinates.lat}, Country : {data.country}</p>
-            <p>Sunrise : {new Date(data.sunrise * 1000).toLocaleTimeString()}</p>
-            <p>Sunset : {new Date(data.sunset * 1000).toLocaleTimeString()}</p>
+            <p>Sunrise : {new Date(data.sunrise * 1000).toLocaleTimeString()}, Sunset : {new Date(data.sunset * 1000).toLocaleTimeString()}</p>
             <p>Visibility : {data.visibility} meters</p>
             <p>The Weather can be described as feels like {data.feelsLike}
               &deg;C and Condtion is {data.cond}</p>
