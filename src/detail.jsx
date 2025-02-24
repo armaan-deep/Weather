@@ -48,16 +48,17 @@ export default function data({ data }) {
               color="text.secondary"
               component={"span"}
             >
-              <p>Temperature : {data.temp}&deg;C</p>
-              <p>Humidity: {data.humidity}</p>
-              <p>Pressure : {data.pressure}</p>
-              <p>Maximum Temperature : {data.tempMax}&deg;C</p>
-              <p>Mininum Temperature : {data.tempMin}&deg;C</p>
-              <p>Wind : {data.wind}</p>
-              <p>
-                The Weather can be described as feels like {data.feelsLike}
-                &deg;C and Condtion is {data.cond}
-              </p>
+            <p>Temperature : {data.temp}&deg;C</p>
+            <p>Humidity: {data.humidity}</p>
+            <p>Pressure : {data.pressure}</p>
+            <p>Wind : {data.wind}</p>
+            <p>Coordinates : Longitude {data.coordinates.lon}, Latitude {data.coordinates.lat}</p>
+            <p>Country : {data.country}</p>
+            <p>Sunrise : {new Date(data.sunrise * 1000).toLocaleTimeString()}</p>
+            <p>Sunset : {new Date(data.sunset * 1000).toLocaleTimeString()}</p>
+            <p>Visibility : {data.visibility} meters</p>
+            <p>The Weather can be described as feels like {data.feelsLike}
+              &deg;C and Condtion is {data.cond}</p>
             </Typography>
           </CardContent>
         </div>
