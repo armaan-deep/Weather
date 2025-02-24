@@ -5,6 +5,9 @@
 ### Through Entering City Name you get Details about
 **_> Temperature (Minimum, Maximum, Current)_** <br>
 **_> Wind_** <br>
+**_> Sunset_** <br>
+**_> Sunrise_** <br>
+**_> Locations Details_** <br>
 **_> Humidity_** <br>
 **_> Feels Like and Overall Conclusion_** <br>
 
