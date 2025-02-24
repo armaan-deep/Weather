@@ -21,18 +21,24 @@ let Search = ({ SetData, setLoading }) => {
 
       let result = await res.json();
       console.log(result);
-      let weatherInfo = {
-        city: city,
-        humidity: result.main.humidity,
-        pressure: result.main.pressure,
-        temp: result.main.temp,
-        feelsLike: result.main.feels_like,
-        tempMax: result.main.temp_max,
-        tempMin: result.main.temp_min,
-        wind: result.wind.speed,
-        cond: result.weather[0].description,
-        condition: true,
-      };
+let weatherInfo = {
+    city: city,
+    humidity: result.main.humidity,
+    pressure: result.main.pressure,
+    temp: result.main.temp,
+    wind: result.wind.speed,
+    cond: result.weather[0].description,
+    condition: true,
+    coordinates: {
+        lon: result.coord.lon,
+        lat: result.coord.lat
+    },
+    country: result.sys.country,
+    sunrise: result.sys.sunrise,
+    sunset: result.sys.sunset,
+    visibility: result.visibility,
+    description: result.weather[0].description
+};
       setCity("");
       setLoading(false);
       return weatherInfo;
